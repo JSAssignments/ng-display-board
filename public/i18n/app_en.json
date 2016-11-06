@@ -1,0 +1,16 @@
+{
+   "titles":{
+      "carrier":"Carrier",
+      "currentTime": "Current Time: {{data}}",
+      "destination":"Destination",
+      "info": "North Station Information",
+      "mbta":"MBTA",
+      "origin":"Origin",
+      "status":"Status",
+      "tbd":"TBD",
+      "time":"Time",
+      "track":"Track#",
+      "train":"Train#",
+      "trip":"Trip"
+   }
+}

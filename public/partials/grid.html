@@ -1,0 +1,36 @@
+<div class="table-responsive">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th colspan="2">{{ current.day }}
+          <br /> {{ current.date }}</th>
+        <th colspan="2">
+          <span class="text-center">
+            <h2>{{ 'titles.info' | translate }}</h2>
+          </span>
+        </th>
+        <th colspan="3">{{ 'titles.currentTime' | translate: {data: current.time} }}</th>
+      </tr>
+      <tr>
+        <th>{{ 'titles.carrier' | translate }}</th>
+        <th>{{ 'titles.time' | translate }}</th>
+        <th>{{ 'titles.origin' | translate }}</th>
+        <th>{{ 'titles.destination' | translate }}</th>
+        <th>{{ 'titles.trip' | translate }}</th>
+        <th>{{ 'titles.track' | translate }}</th>
+        <th>{{ 'titles.status' | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="schedule in data">
+        <td> {{ (schedule.Carrier) ? schedule.Carrier : ('titles.mbta' | translate)}} </td>
+        <td> {{ schedule.TimeStamp | date: 'shortTime' }} </td>
+        <td> {{ schedule.Origin}} </td>
+        <td> {{ schedule.Destination }} </td>
+        <td> {{ schedule.Trip }} </td>
+        <td> {{ (schedule.Track) ? schedule.Track : ('titles.tbd' | translate) }} </td>
+        <td> {{ schedule.Status }} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

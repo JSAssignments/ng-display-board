@@ -1,0 +1,16 @@
+{
+  "name": "wellington-assignment",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "file-system": "^2.2.1",
+    "jade": "*"
+  },
+  "devDependencies": {
+    "underscore": "^1.8.3"
+  }
+}
