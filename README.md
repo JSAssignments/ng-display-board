@@ -15,7 +15,7 @@ $ bower install
 $ node server.js
 ```
 ## Demo
-[MBTA Assignment]()
+[MBTA Assignment](http://ng-mbta.github.io/ng-display-board/public/index.html)
 
 ## Developing
 
