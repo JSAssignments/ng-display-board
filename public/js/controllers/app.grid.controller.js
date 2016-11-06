@@ -12,9 +12,9 @@
     .module('MBTA')
     .controller('GridCtrl', GridCtrl);
 
-  GridCtrl.$inject = ['$scope', '$http'];
+  GridCtrl.$inject = ['$scope', '$http', '$interval'];
 
-  function GridCtrl($scope, $http) {
+  function GridCtrl($scope, $http, $interval) {
 
     var vm = this;
 
@@ -33,7 +33,7 @@
     };
 
     vm.updateCurrentDateTime = function() {
-      setInterval(function() {
+      $interval(function() {
         vm.getCurrentDateTime();
       }, 1000);
     };
